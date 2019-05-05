@@ -1,6 +1,8 @@
 {
 	"Key Pressed 1 time": "Pressed 1x",
 	"Key Pressed 2 times": "Pressed 2x",
+	"Key Pressed 3 times": "Pressed 3x",
+	"Key Pressed 4 times": "Pressed 4x",
 	"Key Held Down": "Held Down",
 	"Key Released": "Released",
 	"Group2-I": "Group 2 - on (I)",
@@ -10,5 +12,13 @@
 	"Group4-I": "Group 4 - on (I)",
 	"Group4-O": "Group 4 - off (O)",
 	"Group5-I": "Group 5 - on (I)",
-	"Group5-O": "Group 5 - off (O)"
+	"Group1": "Group 1",
+	"Group2": "Group 2",
+	"Group3": "Group 3",
+	"Group4": "Group 4",
+	"Switched ON": "Switched on",
+	"Switched OFF": "Switched off",
+	"Dimming UP": "Dimming up / Held Down (increase)",
+	"Dimming DOWN": "Dimming down / Held Down (decrease)",
+	"Dimming STOP": "Dimming stop / Released"
 }
