@@ -33,8 +33,8 @@
 		"manufacturerId": 816,
 		"productTypeId": 768,
 		"productId": 41733,
-		"productDocumentation": "",
-		"pid": 9999,
+		"zwaveAllianceProductId": 3334,
+		"zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/3334/SR-ZV9001K8-DIM-G4%20Instruction%2020190314.pdf",
 		"imageRemotePath": "",
 		"learnmode": {
 			"image": "{{driverAssetsPath}}/learnmode.svg",

@@ -12,7 +12,7 @@ class ROBBsmarrtApp extends Homey.App {
 		this.triggerWallController_scene
 			.register()
 			.registerRunListener((args, state) =>
-				Promise.resolve(args.button.id === state.button && args.scene.id === state.scene));
+			 Promise.resolve(args.button.id === state.button && args.scene.id === state.scene));
 
 		this.triggerWallController_scene
 			.getArgument('scene')

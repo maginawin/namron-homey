@@ -36,6 +36,8 @@
     "productId": [
       53260
     ],
+    "zwaveAllianceProductId": 3331,
+    "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/3331/SR-ZV9040A-A%20Micro%20Smart%20Dimmer.pdf",
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {

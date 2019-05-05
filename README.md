@@ -17,10 +17,14 @@ This app adds support for the ROBB smarrt Z-wave and Zigbee device sold by [ROBB
 * [Wall controller 2 button](https://www.robbshop.nl/wandzender-2v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
 * [Wall controller 4 button](https://www.robbshop.nl/wandzender-4v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)   
 * [Wall controller 8 button](https://www.robbshop.nl/wandzender-8v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
+* [LED Dimmer - White](https://www.robbshop.nl/led-driver-z-wave-12-36v-720w-robb-smarrt) (onoff, dim)   
 * More Z-wave devices will follow soon
 
 ### Zigbee devices
 * [Dimmer - 3 wire](https://www.robbshop.nl/inbouwdimmer-zigbee-robb-smarrt) (onoff-, dim- capabilities and 'set forced brightness' action card)
+* [Switch](https://www.robbshop.nl/inbouwschakelaar-zigbee-robb-smarrt) (onoff capability)
+* [Wall controller 4 button](https://www.robbshop.nl/wandzender-4v-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)   
+* [Wall controller 8 button](https://www.robbshop.nl/wandzender-8v-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)   
 * More Zigbee devices will follow soon
 
 ## Supported Languages:
@@ -41,6 +45,11 @@ Please report issues at the [issues section on Github ](https://github.com/ROBB-
 If possible, please report issues at the issues section on Github otherwise in the above mentioned topic.
 
 ## Change Log:
+### v 1.1.0
+* Add support for [LED Dimmer - White (Z-Wave)](https://www.robbshop.nl/led-driver-z-wave-12-36v-720w-robb-smarrt) (onoff, dim capability), contribution by Hylke Faas    
+* Add support for [Switch (Zigbee)](https://www.robbshop.nl/inbouwschakelaar-zigbee-robb-smarrt) (onoff capability)
+* Add support for [Wall controller 4 button (Zigbee)](https://www.robbshop.nl/wandzender-4v-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)   
+* Add support for [Wall controller 8 button (Zigbee)](https://www.robbshop.nl/wandzender-8v-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)        
 
 ### v 1.0.3
 * Add support for [Dimmer - 2 wire](https://www.robbshop.nl/inbouwdimmer-zwave-2-draads-robb-smarrt)     

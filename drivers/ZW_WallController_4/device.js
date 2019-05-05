@@ -56,7 +56,7 @@ module.exports = class ZW_WallController_4 extends ZwaveDevice {
 
 				const remoteValue = {
 					button: this.buttonMap[report['Scene Number'].toString()].button,
-					scene: report.Properties1['Key Attributes'],
+					scene: this.sceneMap[report.Properties1['Key Attributes'].toString()].scene,
 				};
 
 				this.log('Triggering sequence:', report['Sequence Number'], 'remoteValue', remoteValue);
