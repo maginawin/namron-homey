@@ -1,6 +1,6 @@
 {
   "id": "nl.ROBBshop.ROBB-smarrt",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#f28c00",
@@ -56,6 +56,9 @@
         "email": "app@ROBBshop.nl"
       },
       {
+        "name": "Hylke Faas"
+      },
+      {
         "name": "Ted Tolboom",
         "email": "dTNL.Homey@gmail.com"
       }
@@ -77,7 +80,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
           }
         ],
         "tokens": [
@@ -119,7 +122,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
           },
           {
             "name": "button",
@@ -279,6 +282,181 @@
       ]
     },
     {
+      "id": "ZB_Switch",
+      "name": {
+        "en": "Switch (Zigbee)",
+        "nl": "Inbouwschakelaar (Zigbee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "icon": "/drivers/ZB_Switch/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZB_Switch/assets/images/large.png",
+        "small": "/drivers/ZB_Switch/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "Sunricher",
+        "productId": [
+          "ON/OFF"
+        ],
+        "deviceId": 256,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/ZB_Switch/assets/learnmode.svg",
+          "instruction": {
+            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/ZB_Switch/assets/learnmode.svg",
+          "instruction": {
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+          }
+        }
+      },
+      "settings": []
+    },
+    {
+      "id": "ZB_WallController_4",
+      "name": {
+        "en": "Wall controller - 4 button (Zigbee)"
+      },
+      "icon": "/drivers/ZB_WallController_4/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZB_WallController_4/assets/images/large.png",
+        "small": "/drivers/ZB_WallController_4/assets/images/small.png"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_battery"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "id": "icon"
+          },
+          {
+            "id": "battery",
+            "capabilities": [
+              "measure_battery"
+            ],
+            "options": {
+              "showTitle": true
+            }
+          }
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "Sunricher",
+        "productId": [
+          "ZG2833K4_EU06"
+        ],
+        "deviceId": 1,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/ZB_WallController_4/assets/learnmode.svg",
+          "instruction": {
+            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/ZB_WallController_4/assets/learnmode.svg",
+          "instruction": {
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "Wake-up_notification",
+          "value": "Wake up Wall controller before save",
+          "type": "label",
+          "label": {
+            "en": "Note:"
+          },
+          "hint": {
+            "en": "Short press a button to wake-up the Wall controller for 3 seconds, then press and hold I and O together over one second to wake-up the wall switch for 7 seconds.\nThen press save.",
+            "nl": "Druk kort op een knop om de wand controller te activeren, houdt daarna I en O tegelijkertijd ingedrukt om de Z-push voor 7 seconden wakker te houden.\nDruk daarna op save."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZB_WallController_8",
+      "name": {
+        "en": "Wall controller - 8 button (Zigbee)"
+      },
+      "icon": "/drivers/ZB_WallController_8/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZB_WallController_8/assets/images/large.png",
+        "small": "/drivers/ZB_WallController_8/assets/images/small.png"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_battery"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "id": "icon"
+          },
+          {
+            "id": "battery",
+            "capabilities": [
+              "measure_battery"
+            ],
+            "options": {
+              "showTitle": true
+            }
+          }
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "Sunricher",
+        "productId": [
+          "ZG2833K8_EU05"
+        ],
+        "deviceId": 1,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/ZB_WallController_8/assets/learnmode.svg",
+          "instruction": {
+            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
+            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/ZB_WallController_8/assets/learnmode.svg",
+          "instruction": {
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
+            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "Wake-up_notification",
+          "value": "Wake up Wall controller before save",
+          "type": "label",
+          "label": {
+            "en": "Note:"
+          },
+          "hint": {
+            "en": "Short press a button to wake-up the Wall controller for 3 seconds, then press and hold I and O together over one second to wake-up the wall switch for 7 seconds.\nThen press save.",
+            "nl": "Druk kort op een knop om de wand controller te activeren, houdt daarna I en O tegelijkertijd ingedrukt om de Z-push voor 7 seconden wakker te houden.\nDruk daarna op save."
+          }
+        }
+      ]
+    },
+    {
       "id": "ZW_Dimmer_2wire",
       "name": {
         "en": "Dimmer - 2 wire (Z-wave)",
@@ -316,6 +494,8 @@
         "productId": [
           53260
         ],
+        "zwaveAllianceProductId": 3331,
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/3331/SR-ZV9040A-A%20Micro%20Smart%20Dimmer.pdf",
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_2wire/assets/learnmode.svg",
           "instruction": {
@@ -1006,20 +1186,20 @@
       ]
     },
     {
-      "id": "ZW_LED_Driver",
+      "id": "ZW_LED-dimmer_White",
       "name": {
-        "en": "LED driver (Z-wave)",
-        "nl": "LED driver (Z-wave)"
+        "en": "LED dimmer - White (Z-wave)",
+        "nl": "LED dimmer - Wit (Z-wave)"
       },
       "class": "light",
       "capabilities": [
         "onoff",
         "dim"
       ],
-      "icon": "/drivers/ZW_LED_Driver/assets/icon.svg",
+      "icon": "/drivers/ZW_LED-dimmer_White/assets/icon.svg",
       "images": {
-        "large": "/drivers/ZW_LED_Driver/assets/images/large.png",
-        "small": "/drivers/ZW_LED_Driver/assets/images/small.png"
+        "large": "/drivers/ZW_LED-dimmer_White/assets/images/large.png",
+        "small": "/drivers/ZW_LED-dimmer_White/assets/images/small.png"
       },
       "zwave": {
         "manufacturerId": 816,
@@ -1032,14 +1212,14 @@
         "zwaveAllianceProductId": 2773,
         "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2773/Z-Wave%20LED%20Dimmer%20SR-ZV9101FX-EU%20User%20Manual.pdf",
         "learnmode": {
-          "image": "/drivers/ZW_LED_Driver/assets/learnmode.svg",
+          "image": "/drivers/ZW_LED-dimmer_White/assets/learnmode.svg",
           "instruction": {
             "en": "Power on the LED dimmer, make sure the LED dimmer does not belong to any Z-Wave network.\n\t1) When the connected LED light flashes quickly for 6 seconds, it means the LED dimmer does not belong to any network. Triple press the 'Inclusion/Exclusion' button.\n\t2) When the connected LED light is under solid 'on' status, it means the LED dimmer has already been included into a network. First you have to set the LED dimmer into exclusion mode, once excluded, it will be set into inclusion mode automatically, and waiting to be included.\nThe connected LED light stays solid on 3s to indicate successful inclusion.",
             "nl": "Schakel de LED-dimmer in, zorg ervoor dat de LED-dimmer niet tot een Z-Wave-netwerk behoort. \n\t1) Wanneer de aangesloten LED-lamp snel knippert gedurende 6 seconden, betekent dit dat de LED-dimmer niet tot een netwerk behoort. Druk driemaal op de knop 'Inclusion/Exclusion'. \n\t2) Wanneer de aangesloten LED-lamp continu brandt, betekent dit dat de LED-dimmer al is opgenomen in een Z-Wave netwerk. Eerst moet je de LED-dimmer in de 'exclusion' modus zetten, eenmaal uitgesloten, wordt deze automatisch in de inclusiemodus gezet en wacht op opname.\nDe aangesloten LED-lamp blijft stabiel op 3s bij succesvolle 'inclusion'."
           }
         },
         "unlearnmode": {
-          "image": "/drivers/ZW_LED_Driver/assets/learnmode.svg",
+          "image": "/drivers/ZW_LED-dimmer_White/assets/learnmode.svg",
           "instruction": {
             "en": "Triple press the 'inclusion/exclusion' button, the LED dimmer will be set to exclusion mode, the connected LED light will flash quickly for 6 seconds then connected LED light stays solid on 3s to indicate successful exclusion.",
             "nl": "Druk driemaal op de knop 'inclusion/exclusion', de LED-dimmer wordt ingesteld op de exclusion mode, de aangesloten LED-lamp knippert snel gedurende 6 seconden en de aangesloten LED-lamp brandt continu op 3 seconden om succesvolle uitsluiting aan te geven."
@@ -1454,8 +1634,8 @@
         "manufacturerId": 816,
         "productTypeId": 768,
         "productId": 41733,
-        "productDocumentation": "",
-        "pid": 9999,
+        "zwaveAllianceProductId": 3334,
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/3334/SR-ZV9001K8-DIM-G4%20Instruction%2020190314.pdf",
         "imageRemotePath": "",
         "learnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
