@@ -1,8 +1,8 @@
 {
-  "id": "ZW_LED_Driver",
+  "id": "ZW_LED-dimmer_White",
   "name": {
-    "en": "LED driver (Z-wave)",
-    "nl": "LED driver (Z-wave)"
+    "en": "LED dimmer - White (Z-wave)",
+    "nl": "LED dimmer - Wit (Z-wave)"
   },
   "class": "light",
   "capabilities": [

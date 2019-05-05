@@ -4,14 +4,14 @@ const Homey = require('homey');
 
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
-module.exports = class ZW_LED_Driver extends ZwaveDevice {
+module.exports = class ZW_LEDdimmer_White extends ZwaveDevice {
 	onMeshInit() {
 
 		this.setUnavailable(Homey.__('pairing.configuring'));
 
 		// enable debugging
 		this.enableDebug();
-		
+
 		// print the node's info to the console
 		this.printNode();
 
