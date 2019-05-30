@@ -1,6 +1,6 @@
 {
   "id": "nl.ROBBshop.ROBB-smarrt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#f28c00",
@@ -80,7 +80,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
+            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZW_WallController_RGBW|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
           }
         ],
         "tokens": [
@@ -122,7 +122,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
+            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZW_WallController_RGBW|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
           },
           {
             "name": "button",
@@ -361,15 +361,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on and the remote will be set to adding mode. \nThe green LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on and the remote will be set to adding mode. \nThe green LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
           }
         }
       },
@@ -429,15 +429,15 @@
         "learnmode": {
           "image": "/drivers/ZB_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "There are two methods to set the in-wall dimmer into inclusion mode:\n1)Repower on the dimmer, it will be set into inclusion mode automatically, and waiting to be included.\n2)Press the reset button 5 times (within 1.5 seconds) on the dimmer, it will reset the dimmer and activate the inclusion mode.\nThe connected light will stay solid on for 3 seconds to indicate successful inclusion.",
-            "nl": "De inclusion modus wordt geactiveerd op de volgende twee mmanieren:\n1)Stroom opnieuw inschakelen op de dimmer, waarna de dimmer automatisch de inclusion mode activeerd en wacht om toegevoegd te worden. \n2)Vijf keer de reset knop op de dimmer indrukken reset de dimmer en activeert de inclusion modus.\nDe aangesloten lamp brand gedurende 3 seconden wanneer het toevoegen succesvol afgerond is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on and the remote will be set to adding mode. \nThe green LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZB_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network.",
-            "nl": "Om de dimmer te verwijderen, druk drie keer de reset knop op de dimmer in. \n De exclusion modus van de dimmer wordt geactiveerd en de dimmer wordt verwijdert uit het netwerk."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 1 (upper rockers) over 3 seconds. \nThe green LED indicator will turn on and the remote will be set to adding mode. \nThe green LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 1 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe groene LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe groene LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
           }
         }
       },
@@ -1464,15 +1464,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe LED indicator will turn on and the remote will be set to adding mode. \nThe LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe LED indicator will turn on and the remote will be set to adding mode. \nThe LED indicator blinking 4 times will indicate successful inclusion.",
-            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
           }
         },
         "associationGroups": [
@@ -1549,15 +1549,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe LED indicator will turn on and the remote will be set to adding mode. \nThe LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe LED indicator will turn on and the remote will be set to adding mode. \nThe LED indicator blinking 4 times will indicate successful inclusion.",
-            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
           }
         },
         "associationGroups": [
@@ -1640,15 +1640,15 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe LED indicator will turn on and the remote will be set to adding mode. \nThe LED indicator blinking 6 times will indicate successful inclusion.",
-            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
           }
         },
         "unlearnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe LED indicator will turn on and the remote will be set to adding mode. \nThe LED indicator blinking 4 times will indicate successful inclusion.",
-            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
           }
         },
         "associationGroups": [
@@ -1683,6 +1683,91 @@
             "hint": {
               "en": "Group 5 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
               "nl": "Groep 5 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "Wake-up_notification",
+          "value": "Wake up Wall controller before save",
+          "type": "label",
+          "label": {
+            "en": "Note:"
+          },
+          "hint": {
+            "en": "Short press a button to wake-up the Wall controller for 3 seconds, then press and hold I and O together over one second to wake-up the wall switch for 7 seconds.\nThen press save.",
+            "nl": "Druk kort op een knop om de wand controller te activeren, houdt daarna I en O tegelijkertijd ingedrukt om de Z-push voor 7 seconden wakker te houden.\nDruk daarna op save."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZW_WallController_RGBW",
+      "name": {
+        "en": "Wall controller - RGBW (Z-wave)"
+      },
+      "icon": "/drivers/ZW_WallController_RGBW/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZW_WallController_RGBW/assets/images/large.png",
+        "small": "/drivers/ZW_WallController_RGBW/assets/images/small.png"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_battery"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "id": "icon"
+          },
+          {
+            "id": "battery",
+            "capabilities": [
+              "measure_battery"
+            ],
+            "options": {
+              "showTitle": true
+            }
+          }
+        ]
+      },
+      "zwave": {
+        "manufacturerId": 816,
+        "productTypeId": 768,
+        "productId": 41740,
+        "zwaveAllianceProductId": 3334,
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/3334/SR-ZV9001K8-DIM-G4%20Instruction%2020190314.pdf",
+        "imageRemotePath": "",
+        "learnmode": {
+          "image": "/drivers/ZW_WallController_RGBW/assets/learnmode.svg",
+          "instruction": {
+            "en": "To include the wall controller to Homey: \nPress and hold down both buttons Power and Brightness of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de wall controller aan Homey toe te voegen: \n1. Hou beide knoppen  en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/ZW_WallController_RGBW/assets/learnmode.svg",
+          "instruction": {
+            "en": "To remove the wall controller to Homey: \nPress and hold down both buttons I and O of Group 2 (upper rockers) over 3 seconds. \nThe blue LED indicator will turn on and the remote will be set to adding mode. \nThe blue LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de wall controller van Homey te verwijderen: \n1. Hou beide knoppen I en O van Groep 2 (bovenste knoppen) ingedrukt voor 3 seconden. \nDe blauwe LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe blauwe LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Group 2 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device: \nShort press power button: send ON/OFF command (BASIC_SET) \nPress and hold down brightness button (sun): send light intensity increase/decrease command (Multilevel V4) \nShort press W / RGB button : turn on/off white/RGB channel (Color Switch Set) \nPress and hold down W / RGB button: adjust intensity of white/RGB channel (Color Switch Start Level Change)",
+              "nl": "Groep 2 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen: \nKort indrukken AAN/UIT knop: stuur ON/OFF commando (BASIC_SET) \nIngedrukt houden dim knop (zon): stuur dim intensiteit verhoog/verlaag commando (Multilevel V4)\nKort indrukken W / RGB knop : schakel wit / RGB kanaal in of uit (Color Switch Set) \nIngedrukt houden W / RGB knop: pas intensiteit aan van wit / RGB kanaal (Color Switch Start Level Change)"
             }
           }
         }

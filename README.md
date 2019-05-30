@@ -17,6 +17,7 @@ This app adds support for the ROBB smarrt Z-wave and Zigbee device sold by [ROBB
 * [Wall controller 2 button](https://www.robbshop.nl/wandzender-2v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
 * [Wall controller 4 button](https://www.robbshop.nl/wandzender-4v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)   
 * [Wall controller 8 button](https://www.robbshop.nl/wandzender-8v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
+* [Wall controller RGBW](https://www.robbshop.nl/wandzender-rgbw-4v-robb-smarrt) (1x click, Key held, Key released, direct association towards other RGBW Z-wave devices)
 * [LED Dimmer - White](https://www.robbshop.nl/led-driver-z-wave-12-36v-720w-robb-smarrt) (onoff, dim)   
 * More Z-wave devices will follow soon
 
@@ -45,6 +46,10 @@ Please report issues at the [issues section on Github ](https://github.com/ROBB-
 If possible, please report issues at the issues section on Github otherwise in the above mentioned topic.
 
 ## Change Log:
+### v 1.1.1
+* Add support for * [Wall controller RGBW](https://www.robbshop.nl/wandzender-rgbw-4v-robb-smarrt) (1x click, Key held, Key released, direct association towards other RGBW Z-wave devices)     
+* Update inclusion text for Z-wave and Zigbee wall controllers    
+
 ### v 1.1.0
 * Add support for [LED Dimmer - White (Z-Wave)](https://www.robbshop.nl/led-driver-z-wave-12-36v-720w-robb-smarrt) (onoff, dim capability), contribution by Hylke Faas    
 * Add support for [Switch (Zigbee)](https://www.robbshop.nl/inbouwschakelaar-zigbee-robb-smarrt) (onoff capability)
