@@ -47,7 +47,7 @@ If possible, please report issues at the issues section on Github otherwise in t
 
 ## Change Log:
 ### v 1.1.1
-* Add support for * [Wall controller RGBW](https://www.robbshop.nl/wandzender-rgbw-4v-robb-smarrt) (1x click, Key held, Key released, direct association towards other RGBW Z-wave devices)     
+* Add support for [Wall controller RGBW (Z-Wave)](https://www.robbshop.nl/wandzender-rgbw-4v-robb-smarrt) (1x click, Key held, Key released, direct association towards other RGBW Z-wave devices)     
 * Update inclusion text for Z-wave and Zigbee wall controllers    
 
 ### v 1.1.0
