@@ -25,8 +25,8 @@
     "small": "{{driverAssetsPath}}/images/small.png"
   },
   "zigbee": {
-    "manufacturerName": "Sunricher",
-    "productId": ["ZG9101SAC-HP"],
+    "manufacturerName": ["Sunricher", "ROBB Smarrt"],
+    "productId": ["ZG9101SAC-HP", "ROB_200-004-0"],
     "deviceId": 257,
     "profileId": 260,
     "learnmode": {
