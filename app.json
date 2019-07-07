@@ -1,6 +1,6 @@
 {
   "id": "nl.ROBBshop.ROBB-smarrt",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#f28c00",
@@ -80,7 +80,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZW_WallController_RGBW|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
+            "filter": "driver_id=ZW_Remote_4|ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZW_WallController_RGBW|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
           }
         ],
         "tokens": [
@@ -122,7 +122,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZW_WallController_RGBW|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
+            "filter": "driver_id=ZW_Remote_4|ZW_WallController_2|ZW_WallController_4|ZW_WallController_8|ZW_WallController_RGBW|ZB_WallController_2|ZB_WallController_4|ZB_WallController_8"
           },
           {
             "name": "button",
@@ -213,9 +213,13 @@
         "small": "/drivers/ZB_Dimmer_3wire/assets/images/small.png"
       },
       "zigbee": {
-        "manufacturerName": "Sunricher",
+        "manufacturerName": [
+          "Sunricher",
+          "ROBB Smarrt"
+        ],
         "productId": [
-          "ZG9101SAC-HP"
+          "ZG9101SAC-HP",
+          "ROB_200-004-0"
         ],
         "deviceId": 257,
         "profileId": 260,
@@ -1420,6 +1424,110 @@
               "type": "checkbox"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4",
+      "name": {
+        "en": "Remote - 4 channel (Z-wave)",
+        "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
+      },
+      "icon": "/drivers/ZW_Remote_4/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZW_Remote_4/assets/images/large.png",
+        "small": "/drivers/ZW_Remote_4/assets/images/small.png"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_battery"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "id": "icon"
+          },
+          {
+            "id": "battery",
+            "capabilities": [
+              "measure_battery"
+            ],
+            "options": {
+              "showTitle": true
+            }
+          }
+        ]
+      },
+      "zwave": {
+        "manufacturerId": 816,
+        "productTypeId": 768,
+        "productId": 41730,
+        "zwaveAllianceProductId": 3334,
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/3334/SR-ZV9001K8-DIM-G4%20Instruction%2020190314.pdf",
+        "imageRemotePath": "",
+        "learnmode": {
+          "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
+          "instruction": {
+            "en": "To include the remote to Homey: \nPress and hold down both I and O (upper rockers) over 3 seconds. \nThe red LED indicator will turn on and the remote will be set to adding mode. \nThe red LED indicator blinking 6 times will indicate successful inclusion.",
+            "nl": "Om de afstandsbediening aan Homey toe te voegen: \n1. Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden. \nDe rode LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe rode LED indicator knippert 6 keer wanneer het toevoegen succesvol is."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
+          "instruction": {
+            "en": "To remove the remote from Homey: \nPress and hold down both buttons I and O (upper rockers) over 3 seconds. \nThe red LED indicator will turn on and the remote will be set to adding mode. \nThe red LED indicator blinking 4 times will indicate successful inclusion.",
+            "nl": "Om de afstandsbediening van Homey te verwijderen: \n1. Hou beide knoppen I en O (bovenste knoppen) ingedrukt voor 3 seconden. \nDe rode LED indicator gaat aan en de wall controller is in toevoegmodus gezet. \nDe rode LED indicator knippert 4 keer wanneer het toevoegen succesvol is."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. Scene Notification and battery reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "nl": "Lifeline: Association Groep 1 wordt gebruikt om alle rapportages door te geven. Slechts een node kan toegevoegd worden aan deze associatie groep. \nStandaard: 1 (Homey's ID)"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Group 1 (upper rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 1 (bovenste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+            }
+          },
+          "3": {
+            "hint": {
+              "en": "Group 2: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 2: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+            }
+          },
+          "4": {
+            "hint": {
+              "en": "Group 3: Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 3: Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+            }
+          },
+          "5": {
+            "hint": {
+              "en": "Group 4 (bottom rockers): Adding other Z-wave devices to this group will enable direct control from Wall controller to that device:\nShort press: on/off (BASIC_SET) command \nLong press: increase / decrease dim-level command (SWITCH_MULTILEVEL).",
+              "nl": "Groep 4 (onderste knoppen): Het toevoegen van andere Z-wave devices aan deze groep zal directe controle van de Wall controller over deze devices toevoegen:\nKort ingedrukt: on/off (BASIC_SET) commando\nLang ingedrukt: verhoog / verlaag dim-level commando (SWITCH_MULTILEVEL)."
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "Wake-up_notification",
+          "value": "Wake up Wall controller before save",
+          "type": "label",
+          "label": {
+            "en": "Note:"
+          },
+          "hint": {
+            "en": "Short press a button to wake-up the Wall controller for 3 seconds, then press and hold I and O together over one second to wake-up the wall switch for 7 seconds.\nThen press save.",
+            "nl": "Druk kort op een knop om de wand controller te activeren, houdt daarna I en O tegelijkertijd ingedrukt om de Z-push voor 7 seconden wakker te houden.\nDruk daarna op save."
+          }
         }
       ]
     },

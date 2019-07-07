@@ -14,6 +14,7 @@ This app adds support for the ROBB smarrt Z-wave and Zigbee device sold by [ROBB
 ### Z-wave devices
 * [Dimmer - 2 wire](https://www.robbshop.nl/inbouwdimmer-zwave-2-draads-robb-smarrt) (onoff, dim, meter_power, measure_power)
 * [Dimmer - 3 wire](https://www.robbshop.nl/inbouwdimmer-zwave-3-draads-robb-smarrt) (onoff, dim)
+* [Remote control 4 channels](https://www.robbshop.nl/4-kanaals-afstandsbediening-z-wave-plus-robb-smarrt) (1x click, Key held, Key released, all groups on or off, Scene 1 and Scene 2, direct association towards other Z-wave devices)  
 * [Wall controller 2 button](https://www.robbshop.nl/wandzender-2v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
 * [Wall controller 4 button](https://www.robbshop.nl/wandzender-4v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)   
 * [Wall controller 8 button](https://www.robbshop.nl/wandzender-8v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
@@ -46,6 +47,10 @@ Please report issues at the [issues section on Github ](https://github.com/ROBB-
 If possible, please report issues at the issues section on Github otherwise in the above mentioned topic.
 
 ## Change Log:
+### v 1.1.2
+* Add support for [Remote control 4 channels](https://www.robbshop.nl/4-kanaals-afstandsbediening-z-wave-plus-robb-smarrt) (1x click, Key held, Key released, all groups on or off, Scene 1 and Scene 2, direct association towards other Z-wave devices)  
+* Fix inclusion issue Zigbee dimmer 3-wire       
+
 ### v 1.1.1
 * Add support for [Wall controller RGBW (Z-Wave)](https://www.robbshop.nl/wandzender-rgbw-4v-robb-smarrt) (1x click, Key held, Key released, direct association towards other RGBW Z-wave devices)     
 * Update inclusion text for Z-wave and Zigbee wall controllers    
