@@ -1,6 +1,6 @@
 {
   "id": "nl.ROBBshop.ROBB-smarrt",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#f28c00",
@@ -215,7 +215,8 @@
       "zigbee": {
         "manufacturerName": [
           "Sunricher",
-          "ROBB smarrt"
+          "ROBB smarrt",
+          "ROBB Smarrt"
         ],
         "productId": [
           "ZG9101SAC-HP",

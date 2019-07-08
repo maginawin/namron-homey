@@ -47,7 +47,7 @@ Please report issues at the [issues section on Github ](https://github.com/ROBB-
 If possible, please report issues at the issues section on Github otherwise in the above mentioned topic.
 
 ## Change Log:
-### v 1.1.2
+### v 1.1.3
 * Add support for [Remote control 4 channels](https://www.robbshop.nl/4-kanaals-afstandsbediening-z-wave-plus-robb-smarrt) (1x click, Key held, Key released, all groups on or off, Scene 1 and Scene 2, direct association towards other Z-wave devices)  
 * Fix inclusion issue Zigbee dimmer 3-wire       
 
