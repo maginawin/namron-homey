@@ -10,8 +10,10 @@
     "dim"
   ],
   "energy": {
-    "usageOn": 720,
-    "usageOff": 0
+    "approximation": {
+      "usageOn": 720,
+      "usageOff": 0
+    }
   },
   "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {

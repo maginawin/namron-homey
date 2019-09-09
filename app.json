@@ -208,8 +208,10 @@
         }
       },
       "energy": {
-        "usageOn": 350,
-        "usageOff": 0
+        "approximation": {
+          "usageOn": 350,
+          "usageOff": 0
+        }
       },
       "icon": "/drivers/ZB_Dimmer_3wire/assets/icon.svg",
       "images": {
@@ -301,8 +303,10 @@
         "onoff"
       ],
       "energy": {
-        "usageOn": 400,
-        "usageOff": 0
+        "approximation": {
+          "usageOn": 400,
+          "usageOff": 0
+        }
       },
       "icon": "/drivers/ZB_Switch/assets/icon.svg",
       "images": {
@@ -1062,8 +1066,10 @@
         }
       },
       "energy": {
-        "usageOn": 400,
-        "usageOff": 0
+        "approximation": {
+          "usageOn": 400,
+          "usageOff": 0
+        }
       },
       "icon": "/drivers/ZW_Dimmer_3wire/assets/icon.svg",
       "images": {
@@ -1300,8 +1306,10 @@
         "dim"
       ],
       "energy": {
-        "usageOn": 720,
-        "usageOff": 0
+        "approximation": {
+          "usageOn": 720,
+          "usageOff": 0
+        }
       },
       "icon": "/drivers/ZW_LED-dimmer_White/assets/icon.svg",
       "images": {

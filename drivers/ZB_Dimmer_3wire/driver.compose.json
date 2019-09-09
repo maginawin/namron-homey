@@ -20,8 +20,10 @@
 		}
 	},
   "energy": {
-    "usageOn": 350,
-    "usageOff": 0
+    "approximation": {
+      "usageOn": 350,
+      "usageOff": 0
+    }
   },
   "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
