@@ -43,8 +43,17 @@ module.exports = class ZB_WallController_4 extends ZigBeeDevice {
 			},
 		};
 
-		// Register dim capability
+		// Register measure_battery capability
 		this.registerCapability('measure_battery', 'genPowerCfg');
+
+		this.registerAttrReportListener('genPowerCfg', 'batteryPercentageRemaining', 10, 60, 1, this.onPowerCfgBatteryPercentageRemainingReport.bind(this), 0)
+			.then(() => {
+				this.log('registered attr report listener');
+			})
+			.catch(err => {
+				this.error('failed to register attr report listener', err);
+			}
+		);
 
 		let clustersArray = ['genOnOff', 'genLevelCtrl'];
 		this.log(clustersArray, Object.keys(clustersArray));
@@ -124,6 +133,12 @@ module.exports = class ZB_WallController_4 extends ZigBeeDevice {
 		});
 		this.log(resultArray);
 		return Promise.resolve(resultArray);
+	}
+
+	onPowerCfgBatteryPercentageRemainingReport(value) {
+		this.log('onPowerCfgBatteryPercentageRemainingReport', value);
+		if (this.hasCapability('alarm_battery')) this.setCapabilityValue('alarm_battery', value < 10);
+		this.setCapabilityValue('measure_battery', value);
 	}
 
 }
