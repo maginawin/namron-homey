@@ -19,6 +19,10 @@
 			}
 		}
 	},
+  "energy": {
+    "usageOn": 350,
+    "usageOff": 0
+  },
   "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",

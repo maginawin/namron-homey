@@ -21,7 +21,10 @@
 			"opts": {
 				"duration": true
 			}
-		}
+		},
+    "measure_power": {
+      "approximated": true
+    }
 	},
   "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
