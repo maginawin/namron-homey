@@ -25,6 +25,7 @@ This app adds support for the ROBB smarrt Z-wave and Zigbee device sold by [ROBB
 ### Zigbee devices
 * [Dimmer - 3 wire](https://www.robbshop.nl/inbouwdimmer-zigbee-robb-smarrt) (onoff-, dim- capabilities and 'set forced brightness' action card)
 * [Switch](https://www.robbshop.nl/inbouwschakelaar-zigbee-robb-smarrt) (onoff capability)
+* [Wall controller 2 button](https://www.robbshop.nl/wandzender-2knops-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)   
 * [Wall controller 4 button](https://www.robbshop.nl/wandzender-4v-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)   
 * [Wall controller 8 button](https://www.robbshop.nl/wandzender-8v-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)   
 * More Zigbee devices will follow soon
@@ -47,6 +48,12 @@ Please report issues at the [issues section on Github ](https://github.com/ROBB-
 If possible, please report issues at the issues section on Github otherwise in the above mentioned topic.
 
 ## Change Log:
+### v 1.1.4
+* Add support for [Wall controller 2 button (Zigbee)](https://www.robbshop.nl/wandzender-2knops-zigbee-robb-smarrt) (Switch on, Switch off, Dim up / Key held (up), Dim down / Key held (down), Dim stop / Key released)  
+* Fixed battery reporting Zigbee Wall controllers   
+* Updated inclusion information Zigbee Wall controllers      
+* Prepared app and drivers for 'Energy' (Homey 3.0.0)   
+
 ### v 1.1.3
 * Add support for [Remote control 4 channels](https://www.robbshop.nl/4-kanaals-afstandsbediening-z-wave-plus-robb-smarrt) (1x click, Key held, Key released, all groups on or off, Scene 1 and Scene 2, direct association towards other Z-wave devices)  
 * Fix inclusion issue Zigbee dimmer 3-wire       
