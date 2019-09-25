@@ -1,13 +1,13 @@
 # Namron Z-wave app
 
-This app adds support for the Namron Z-wave.://github.com/ROBB-smarrt/nl.ROBBshop.ROBB-smarrt)
+This app adds support for the Namron Z-wave.
 
 ## Supported devices
 
 ### Z-wave devices  
-* [Wall controller 2 button](https://www.robbshop.nl/wandzender-2v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
-* [Wall controller 4 button](https://www.robbshop.nl/wandzender-4v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)   
-* [Wall controller 8 button](https://www.robbshop.nl/wandzender-8v-z-wave-robb-smarrt) (1x click, Key held, Key released, direct association towards other Z-wave devices)
+* [Wall controller 2 button](https://www.elektroimportoren.no/namron-z-wave-1-kanal-bryter-k2/4512712/Product.html)
+* [Wall controller 4 button](https://www.elektroimportoren.no/namron-z-wave-1-kanal-bryter-k4/4512713/Product.html)   
+* [Wall controller 8 button](https://www.elektroimportoren.no/namron-z-wave-4-kanaler-bryter-k8/4512714/Product.html)
 * More Z-wave devices will follow soon
 
 ## Supported Languages:
