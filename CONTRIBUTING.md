@@ -2,11 +2,7 @@
 
 First off all, thank you for taking the time to contribute!
 
-The following is a set of guidelines for contributing to this app and its packages, which are hosted in the [ROBB-smarrt organization](https://github.com/ROBB-smarrt) on GitHub. These are just guidelines, not rules. Use your best judgment, and feel free to contact us if you have any questions.
-
-Please join our [community slack](https://slack.athom.com), if you have not done so already.
-We also have a [community forum](https://community.athom.com/t/9988) for general discussions.
-
+The following is a set of guidelines for contributing to this app and its packages, which are hosted in the on GitHub repository. These are just guidelines, not rules. Use your best judgment, and feel free to contact us if you have any questions.
 
 ## Before submitting a bug or feature request
 
