@@ -1,7 +1,7 @@
 {
-	"name": "nl.ROBBshop.ROBB-smarrt",
+	"name": "namron-homey",
 	"version": "1.0.0",
-	"description": "This app adds support for the [ROBB smarrt devices](https://www.robbshop.nl/manufacturers/robb-smarrt) sold by [ROBBshop.nl](https://www.ROBBshop.nl).",
+	"description": "This app adds support for Namron Z-Wave devices",
 	"main": "app.js",
 	"dependencies": {
 		"homey-meshdriver": "^1.3.0"
@@ -13,12 +13,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ROBB-smarrt/nl.ROBBshop.ROBB-smarrt.git"
+		"url": "git+https://github.com:fiLLLip/namron-homey.git"
 	},
-	"author": "ROBBshop.nl",
+	"author": "fiLLLip",
 	"license": "GPLv3",
 	"bugs": {
-		"url": "https://github.com/ROBB-smarrt/nl.ROBBshop.ROBB-smarrt/issues"
+		"url": "https://github.com/fiLLLip/namron-homey"
 	},
-	"homepage": "https://www.robbshop.nl/manufacturers/robb-smarrt"
+	"homepage": "https://github.com/fiLLLip/namron-homey"
 }
