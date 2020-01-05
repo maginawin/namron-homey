@@ -908,6 +908,78 @@
           }
         }
       ]
+    },
+    {
+      "id": "ZW_WallPlug",
+      "name": {
+        "en": "Wall plug - Actuator (Z-wave)"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ZW_WallPlug/assets/images/large.png",
+        "small": "/drivers/ZW_WallPlug/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 816,
+        "productTypeId": [
+          513
+        ],
+        "productId": [
+          53252
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "1. Power on the smart plug, make sure it does not belong to any Z-Wave network. Press and hold down action button for over 10 seconds, if the LED indicator flashes yellow slowly, it means it does not belong to any network. Repower the smart plug/Triple press the action button on the smart plug to put it into inclusion mode."
+          }
+        },
+        "unlearnmode": {
+          "instruction": {
+            "en": "To remove the smart plug, triple press the reset button. \nThe smart plug will be set to exclusion mode, and waiting to be excluded, then the smart plug will be excluded to the network."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline association group (do not change)"
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Button behaviour",
+            "nl": "Gedrag knoppen"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "external_switch_inclusion",
+              "value": true,
+              "label": {
+                "en": "Enable external switch",
+                "nl": "External schakelaar gebruiken"
+              },
+              "hint": {
+                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+              },
+              "zwave": {
+                "index": 7,
+                "size": 1
+              },
+              "type": "checkbox"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
