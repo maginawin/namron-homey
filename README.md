@@ -9,6 +9,7 @@ This app adds support for the Namron Z-wave.
 * [Wall controller 4 button 2 channel](https://www.elektroimportoren.no/namron-z-wave-2-kanaler-bryter-k4/4512720/Product.html)   
 * [Wall controller 4 button 1 channel](https://www.elektroimportoren.no/namron-z-wave-1-kanal-bryter-k4/4512713/Product.html)   
 * [Wall controller 8 button](https://www.elektroimportoren.no/namron-z-wave-4-kanaler-bryter-k8/4512714/Product.html)
+* [Wall controller black 8 button](https://www.elektroimportoren.no/namron-z-wave-4-kanaler-bryter-k8-sort/4512722/Product.html)
 * [Remote 4 channel](https://www.elektroimportoren.no/namron-z-wave-4-kanaler-fjernkontroll/4512711/Product.html)
 * [Dimmer](https://www.elektroimportoren.no/namron-z-wave-dimmer-400w/4512710/Product.html)
 * [Wall plug](https://www.elektroimportoren.no/namron-z-wave-veggplugg/4512717/Product.html)
