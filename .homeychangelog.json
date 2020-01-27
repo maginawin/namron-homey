@@ -1,0 +1,14 @@
+{
+  "1.2.1": {
+    "en": "Support for Remote, Dimmer, and 1 channel wall controller"
+  },
+  "1.3.0": {
+    "en": "Support for wall plug"
+  },
+  "1.3.1": {
+    "en": "Support for Dimmer 3wire, Remote 4 button, wall plug and 1 channel wall controller"
+  },
+  "1.3.2": {
+    "en": "Support for black 8 button panel"
+  }
+}
