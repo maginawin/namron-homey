@@ -8,6 +8,7 @@ Z-wave devices
 - Wall controller 4 button 2 channel
 - Wall controller 4 button 1 channel
 - Wall controller 8 button
+- Wall controller 8 black button
 - Remote 4 channel
 - Dimmer
 - Wall plug
