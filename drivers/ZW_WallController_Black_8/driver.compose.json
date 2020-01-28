@@ -1,7 +1,7 @@
 {
 	"id": "ZW_WallController_Black_8",
 	"name": {
-		"en": "Wall controller - Blakc - 8 button (Z-wave)"
+		"en": "Wall controller - Black - 8 button (Z-wave)"
 	},
 	"icon": "{{driverAssetsPath}}/icon.svg",
 	"images": {
