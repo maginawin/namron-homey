@@ -31,7 +31,5 @@ module.exports = class ZW_DimmerRotary extends ZwaveDevice {
 				if (this.hasCapability('dim')) this.setCapabilityValue('dim', report['Current Value'] / 99);
 			}
 		});
-
-		// this.registerSetting('dim_duration', value => new Buffer([value === -1 ? 255 : util.calculateZwaveDimDuration(value)]));
 	}
 }
