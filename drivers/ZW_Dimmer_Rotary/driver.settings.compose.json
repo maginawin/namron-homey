@@ -24,10 +24,6 @@
       {
         "$extends": "dimDuration",
         "$id": "dim_duration"
-      },
-      {
-        "$extends": "minimumBrightness",
-        "$id": "minimum_brightness"
       }
     ]
   },
@@ -46,11 +42,6 @@
       {
         "$extends": "sendBasicReport",
         "$id": "send_basic_report"
-      },
-
-      {
-        "$extends": "drivingType",
-        "$id": "driving_type"
       }
     ]
   }
