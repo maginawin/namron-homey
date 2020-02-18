@@ -529,27 +529,6 @@
                 "min": 0,
                 "max": 127
               }
-            },
-            {
-              "id": "minimum_brightness",
-              "value": 0,
-              "label": {
-                "en": "Minimum brightness value",
-                "nl": "Laagste dim niveau"
-              },
-              "hint": {
-                "en": "This parameter (5) determines the minimum brightness level. Default: 0 %",
-                "nl": "Deze parameter (5) bepaalt het laagste dim niveau. Standaard: 0 %"
-              },
-              "zwave": {
-                "index": 5,
-                "size": 1
-              },
-              "attr": {
-                "min": 0,
-                "max": 50
-              },
-              "type": "number"
             }
           ]
         },
@@ -617,38 +596,6 @@
                 "size": 1
               },
               "type": "checkbox"
-            },
-            {
-              "id": "driving_type",
-              "value": "0",
-              "label": {
-                "en": "MOSFET driving type"
-              },
-              "hint": {
-                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
-              },
-              "zwave": {
-                "index": 6,
-                "size": 1
-              },
-              "values": [
-                {
-                  "id": "0",
-                  "label": {
-                    "en": "Leading edge (default)",
-                    "nl": "Fase aansnijding (standaard)"
-                  }
-                },
-                {
-                  "id": "1",
-                  "label": {
-                    "en": "Trailing edge",
-                    "nl": "Fase afsnijding"
-                  }
-                }
-              ],
-              "type": "dropdown"
             }
           ]
         }
