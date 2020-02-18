@@ -10,8 +10,9 @@ Z-wave devices
 - Wall controller 8 button
 - Wall controller 8 black button
 - Remote 4 channel
-- Dimmer
+- Dimmer (in-box module)
 - Wall plug
+- Dimmer (rotary)
 - More Z-wave devices will follow soon
 
 Supported Languages:

@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#aac655",
@@ -200,8 +200,8 @@
         "productId": [
           53253
         ],
-        "zwaveAllianceProductId": 2918,
-        "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2918/Z-Wave In-wall Dimmer SR-ZV9101SAC-HP-EU.pdf",
+        "zwaveAllianceProductId": 3641,
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=product_documents/3641/4512710%20INSTRUCTION%20MANUAL.pdf",
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
@@ -224,6 +224,250 @@
             "hint": {
               "en": "Lifeline association group (do not change)",
               "nl": "Lifeline association group (niet aanpassen)"
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Button behaviour",
+            "nl": "Gedrag knoppen"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "external_switch_inclusion",
+              "value": true,
+              "label": {
+                "en": "Enable external switch",
+                "nl": "External schakelaar gebruiken"
+              },
+              "hint": {
+                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+              },
+              "zwave": {
+                "index": 7,
+                "size": 1
+              },
+              "type": "checkbox"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Dimming",
+            "nl": "Dimmen"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "id": "dim_duration",
+              "label": {
+                "en": "Dim duration",
+                "nl": "Dim transitietijd"
+              },
+              "hint": {
+                "en": "This parameter (4) determines the default dim duration. Values: 1 - 127 seconds, 0: Instantly. Default: 1 second",
+                "nl": "Deze parameter (4) bepaalt de standaard dim transitietijd in seconden. Waardes: 1 - 127 seconden, 0: Instantaan. Standaard: 1 seconde"
+              },
+              "zwave": {
+                "index": 4,
+                "size": 1,
+                "signed": false
+              },
+              "type": "number",
+              "value": 1,
+              "attr": {
+                "min": 0,
+                "max": 127
+              }
+            },
+            {
+              "id": "minimum_brightness",
+              "value": 0,
+              "label": {
+                "en": "Minimum brightness value",
+                "nl": "Laagste dim niveau"
+              },
+              "hint": {
+                "en": "This parameter (5) determines the minimum brightness level. Default: 0 %",
+                "nl": "Deze parameter (5) bepaalt het laagste dim niveau. Standaard: 0 %"
+              },
+              "zwave": {
+                "index": 5,
+                "size": 1
+              },
+              "attr": {
+                "min": 0,
+                "max": 50
+              },
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other",
+            "nl": "Overige"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "id": "save_state",
+              "value": "0",
+              "label": {
+                "en": "Restore state after power failure",
+                "nl": "Herstel status na stroomonderbreking"
+              },
+              "hint": {
+                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+              },
+              "zwave": {
+                "index": 2,
+                "size": 1
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Turn off light (default)",
+                    "nl": "Schakel de lamp uit (standaard)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Turn on light",
+                    "nl": "Schakel de lamp in"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Restore state",
+                    "nl": "Herstel toestand"
+                  }
+                }
+              ],
+              "type": "dropdown"
+            },
+            {
+              "id": "send_basic_report",
+              "value": true,
+              "label": {
+                "en": "Send `BASIC report`",
+                "nl": "Stuur `BASIC report`"
+              },
+              "hint": {
+                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+              },
+              "zwave": {
+                "index": 3,
+                "size": 1
+              },
+              "type": "checkbox"
+            },
+            {
+              "id": "driving_type",
+              "value": "0",
+              "label": {
+                "en": "MOSFET driving type"
+              },
+              "hint": {
+                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+              },
+              "zwave": {
+                "index": 6,
+                "size": 1
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Leading edge (default)",
+                    "nl": "Fase aansnijding (standaard)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Trailing edge",
+                    "nl": "Fase afsnijding"
+                  }
+                }
+              ],
+              "type": "dropdown"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Dimmer_Rotary",
+      "name": {
+        "en": "Dimmer - Rotary (Z-wave)"
+      },
+      "class": "light",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "setOnDim": false
+        },
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 200,
+          "usageOff": 0
+        }
+      },
+      "icon": "/drivers/ZW_Dimmer_Rotary/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZW_Dimmer_Rotary/assets/images/large.png",
+        "small": "/drivers/ZW_Dimmer_Rotary/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 1080,
+        "productTypeId": [
+          514
+        ],
+        "productId": [
+          2
+        ],
+        "learnmode": {
+          "image": "/drivers/ZW_Dimmer_Rotary/assets/learnmode.svg",
+          "instruction": {
+            "en": "1. Power on the in-wall dimmer and set it into inclusion mode. \nTriple press the reset button on the dimmer, it willset the dimmer to inclusion mode. A purple light will show for 10 seconds while the device is in inclusion mode"
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/ZW_Dimmer_Rotary/assets/learnmode.svg",
+          "instruction": {
+            "en": "To remove the dimmer, triple press the reset button. \nThe dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded to the network."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline association group (do not change)"
             }
           }
         }

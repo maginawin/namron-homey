@@ -38,8 +38,8 @@
     "productId": [
       53253
     ],
-    "zwaveAllianceProductId": 2918,
-    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2918/Z-Wave In-wall Dimmer SR-ZV9101SAC-HP-EU.pdf",
+    "zwaveAllianceProductId": 3641,
+    "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=product_documents/3641/4512710%20INSTRUCTION%20MANUAL.pdf",
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
