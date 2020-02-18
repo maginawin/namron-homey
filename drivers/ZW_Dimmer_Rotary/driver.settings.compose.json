@@ -8,7 +8,7 @@
     "collapsed": false,
     "children": [
       {
-        "$extends": "externalSwitchInclusion",
+        "$extends": "externalSwitchInclusionRotary",
         "$id": "external_switch_inclusion"
       }
     ]
@@ -22,8 +22,16 @@
     "collapsed": true,
     "children": [
       {
-        "$extends": "dimDuration",
+        "$extends": "dimDurationRotary",
         "$id": "dim_duration"
+      },
+      {
+        "$extends": "onOffDimDuration",
+        "$id": "on_off_dim_duration"
+      },
+      {
+        "$extends": "dimMethod",
+        "$id": "dim_method"
       }
     ]
   },
@@ -36,11 +44,15 @@
     "collapsed": true,
     "children": [
       {
-        "$extends": "saveState",
+        "$extends": "defaultBrightness",
+        "$id": "default_brightness"
+      },
+      {
+        "$extends": "saveStateRotary",
         "$id": "save_state"
       },
       {
-        "$extends": "sendBasicReport",
+        "$extends": "sendBasicReportRotary",
         "$id": "send_basic_report"
       }
     ]

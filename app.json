@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#aac655",
@@ -483,17 +483,17 @@
           "children": [
             {
               "id": "external_switch_inclusion",
-              "value": true,
+              "value": false,
               "label": {
                 "en": "Enable external switch",
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
-                "index": 7,
+                "index": 5,
                 "size": 1
               },
               "type": "checkbox"
@@ -515,20 +515,68 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter (4) determines the default dim duration. Values: 1 - 127 seconds, 0: Instantly. Default: 1 second",
-                "nl": "Deze parameter (4) bepaalt de standaard dim transitietijd in seconden. Waardes: 1 - 127 seconden, 0: Instantaan. Standaard: 1 seconde"
+                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
-                "index": 4,
+                "index": 3,
                 "size": 1,
                 "signed": false
               },
               "type": "number",
-              "value": 1,
+              "value": 5,
               "attr": {
                 "min": 0,
-                "max": 127
+                "max": 100
               }
+            },
+            {
+              "id": "on_off_dim_duration",
+              "label": {
+                "en": "On/off fade duration"
+              },
+              "hint": {
+                "en": "This parameter (8) determines the fade duration when turning dimmer on and off. Values: 0-60 seconds. Default: 0"
+              },
+              "zwave": {
+                "index": 8,
+                "size": 1,
+                "signed": false
+              },
+              "type": "number",
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 60
+              }
+            },
+            {
+              "id": "dim_method",
+              "value": "0",
+              "label": {
+                "en": "Dim method"
+              },
+              "hint": {
+                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
+              },
+              "zwave": {
+                "index": 6,
+                "size": 1
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Linear (default)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Logarithmic"
+                  }
+                }
+              ],
+              "type": "dropdown"
             }
           ]
         },
@@ -541,6 +589,26 @@
           "collapsed": true,
           "children": [
             {
+              "id": "default_brightness",
+              "label": {
+                "en": "Default brightness"
+              },
+              "hint": {
+                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+              },
+              "zwave": {
+                "index": 7,
+                "size": 1,
+                "signed": false
+              },
+              "type": "number",
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 99
+              }
+            },
+            {
               "id": "save_state",
               "value": "0",
               "label": {
@@ -548,11 +616,11 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
-                "index": 2,
+                "index": 1,
                 "size": 1
               },
               "values": [
@@ -588,11 +656,11 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
-                "index": 3,
+                "index": 2,
                 "size": 1
               },
               "type": "checkbox"
