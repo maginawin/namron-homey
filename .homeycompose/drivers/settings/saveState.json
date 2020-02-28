@@ -16,14 +16,14 @@
     {
       "id": "0",
       "label": {
-        "en": "Turn off light (default)",
+        "en": "Turn off load (default)",
         "nl": "Schakel de lamp uit (standaard)"
       }
     },
     {
       "id": "1",
       "label": {
-        "en": "Turn on light",
+        "en": "Turn on load",
         "nl": "Schakel de lamp in"
       }
     },
