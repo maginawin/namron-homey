@@ -25,6 +25,6 @@ This app and driver development is based on:
 
 * [ROBB smarrt Z-wave and Zigbee app](https://github.com/robb-smarrt/nl.ROBBshop.ROBB-smarrt)
 
-### Collaborators
+### Contributors
 * Filip Andre Larsen Tomren - [fiLLLip](https://github.com/fiLLLip)
 * Åsmund Bakke Bø - [aasmundbo](https://github.com/aasmundbo)
