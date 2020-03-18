@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "compatibility": ">=1.5.13",
   "sdk": 2,
   "brandColor": "#aac655",
@@ -685,11 +685,6 @@
       "capabilities": [
         "onoff"
       ],
-      "capabilitiesOptions": {
-        "onoff": {
-          "setOnDim": false
-        }
-      },
       "energy": {
         "approximation": {
           "usageOn": 400,

@@ -28,5 +28,8 @@
   },
   "1.3.8": {
     "en": "Refactoring and multiple manufacturer id support"
+  },
+  "1.3.9": {
+    "en": "Small changes to in-wall switch driver"
   }
 }
