@@ -702,7 +702,10 @@
         "small": "/drivers/ZW_InWallSwitch/assets/images/small.png"
       },
       "zwave": {
-        "manufacturerId": 816,
+        "manufacturerId": [
+          816,
+          1080
+        ],
         "productTypeId": [
           512
         ],
@@ -900,7 +903,10 @@
         ]
       },
       "zwave": {
-        "manufacturerId": 816,
+        "manufacturerId": [
+          816,
+          1080
+        ],
         "productTypeId": 768,
         "productId": 45826,
         "zwaveAllianceProductId": 3334,
@@ -1008,7 +1014,10 @@
         ]
       },
       "zwave": {
-        "manufacturerId": 816,
+        "manufacturerId": [
+          816,
+          1080
+        ],
         "productTypeId": 768,
         "productId": 41743,
         "productDocumentation": "",
@@ -1288,7 +1297,10 @@
         "small": "/drivers/ZW_WallPlug/assets/images/small.png"
       },
       "zwave": {
-        "manufacturerId": 816,
+        "manufacturerId": [
+          816,
+          1080
+        ],
         "productTypeId": [
           513
         ],
