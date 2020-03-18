@@ -7,11 +7,6 @@
   "capabilities": [
     "onoff"
   ],
-  "capabilitiesOptions": {
-    "onoff": {
-      "setOnDim": false
-    }
-  },
   "energy": {
     "approximation": {
       "usageOn": 400,
