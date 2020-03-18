@@ -1,7 +1,7 @@
 {
 	"id": "ZW_WallController_8",
 	"name": {
-		"en": "Wall controller - 8 button (Z-wave)"
+		"en": "Wall controller - 8 button (white and black) (Z-wave)"
 	},
 	"icon": "{{driverAssetsPath}}/icon.svg",
 	"images": {
@@ -33,7 +33,7 @@
 		]
 	},
 	"zwave": {
-		"manufacturerId": 816,
+		"manufacturerId": [816,1080],
 		"productTypeId": 768,
 		"productId": 41733,
 		"zwaveAllianceProductId": 3334,

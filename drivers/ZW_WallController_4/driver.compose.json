@@ -1,7 +1,7 @@
 {
 	"id": "ZW_WallController_4",
 	"name": {
-		"en": "Wall controller - 4 button - 1 channel (Z-wave)"
+		"en": "Wall controller - 4 button (1 and 2 channel) (Z-wave)"
 	},
 	"icon": "{{driverAssetsPath}}/icon.svg",
 	"images": {
@@ -33,9 +33,9 @@
 		]
 	},
 	"zwave": {
-		"manufacturerId": 816,
+		"manufacturerId": [816, 1080],
 		"productTypeId": 768,
-		"productId": 41734,
+		"productId": [41734, 41744],
 		"productDocumentation": "",
 		"pid": 9999,
 		"imageRemotePath": "",
