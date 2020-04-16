@@ -3,7 +3,6 @@
 const Homey = require('homey');
 
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
-let lastKey = null;
 
 module.exports = class ZW_WallController_8 extends ZwaveDevice {
 	async onMeshInit() {
