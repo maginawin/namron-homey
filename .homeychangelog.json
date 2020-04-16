@@ -31,5 +31,8 @@
   },
   "1.3.9": {
     "en": "Small changes to in-wall switch driver"
+  },
+  "1.4.0": {
+    "en": "Application structure, more device support"
   }
 }
