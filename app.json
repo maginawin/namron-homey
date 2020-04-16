@@ -8,7 +8,7 @@
     "en": "Namron"
   },
   "description": {
-    "en": "Adds support for Namron Z-wave"
+    "en": "Adds support for Namron Z-wave devices"
   },
   "category": [
     "lights"
@@ -41,6 +41,17 @@
         "email": "aasmundbo@gmail.com"
       }
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/fiLLLip/namron-homey/issues"
+  },
+  "source": "https://github.com/fiLLLip/namron-homey",
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "fiLLLipnet"
+      }
+    }
   },
   "flow": {
     "triggers": [
