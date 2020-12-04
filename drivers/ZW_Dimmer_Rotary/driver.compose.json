@@ -30,7 +30,7 @@
     "small": "{{driverAssetsPath}}/images/small.png"
   },
   "zwave": {
-    "manufacturerId": 1080,
+    "manufacturerId": [1080,1073],
     "productTypeId": [
       514
     ],
