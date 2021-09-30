@@ -1,4 +1,6 @@
-# Namron Z-wave app
+# Namron COMMUNITY Z-wave app
+
+This app is archived since NAMRON themselves took over any further development and Homey App Store app ownership. For any issues with the new app, please follow their instructions in Homey App Store or contact post@namron.com. At time of writing, https://github.com/easyhomesrc/homey_namronas is the official app.
 
 This app adds support for the Namron Z-wave.
 
